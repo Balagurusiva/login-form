@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@300;500&family=Ubuntu:ital,wght@0,300;0,500;1,400&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+             color:aliceblue;
+             font-family: 'Belanosima', sans-serif;
+             letter-spacing: 1px;
+             font-size: 18px;
+        }
+        body{
+            background-image: url('https://i.ibb.co/30mFkZ3/bbg.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            backdrop-filter:blur(100px) ;
+            height:100vh;
+            position:sticky;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login__section{
+            display: flex;
+            justify-content: center;
+            width: 320px;
+            height: 450px;
+            text-align: center;
+            border-radius:10px;
+            background-color: rgba(198, 236, 235, 0.17);
+            backdrop-filter: 10px;
+            padding-top: 50px;
+            color: white;
+        }
+
+        .login__tag{
+            font-size: 42px;
+            font-weight: 600;
+        }
+        label{
+            display: block; 
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        input{
+           
+            width: 75%;
+            height: 40px;
+            border-radius: 5px 0px 0px 5px;
+            padding-left: 5px;
+            border:none;
+            background-color: rgba(255,255,255,0.08);
+            
+        }
+        button{
+            width: 80px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 3px;
+            border: none;
+            color: black;
+            align-content: center;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .input__area{
+            display: flex;
+            margin-bottom:40px ;
+        }
+        .submit{
+            display: block;
+            width: 85%;
+            height: 30px;
+            margin: 0px 0px 0px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 3px;
+            border: none;
+            color: black;
+            padding-top: 10px;
+            text-decoration: none;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="login__section">
+        <form action="">
+            <p class="login__tag">Reset Password</p>
+
+            <div class="inputs">
+                <label for="name">Email</label>
+                <div class="input__area">
+                    <input type="text" placeholder="Enter the name">
+                    <button>Genrate OTP</button>
+                </div>
+ 
+
+                <label for="otp">Enter OTP</label>
+                <div class="input__area">
+                    <input type="number" placeholder="OTP">
+                    <button>Verify</button>
+                </div>
+                
+                <label for="password">new Password</label>
+                <div class="input__area">
+                    <input type="password" placeholder="Enter the password">
+                    <button>Reset</button>
+                </div>
+                 
+            </div> 
+            <a  class="submit" href="./LoginForm.html">submit</a>
+        </form>
+  </div>
+ 
+</body>
+</html>

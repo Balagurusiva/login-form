@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@300;500&family=Ubuntu:ital,wght@0,300;0,500;1,400&display=swap');
+        *{
+            margin: 0px;
+            padding: 00px;
+             color:aliceblue;
+             font-family: 'Belanosima', sans-serif;
+             letter-spacing: 1px;
+             font-size: 18px;
+        }
+        body{
+            background-image: url('https://i.ibb.co/30mFkZ3/bbg.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            backdrop-filter:blur(100px) ;
+            height:100vh;
+            position:sticky;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .conatiner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .card__container{
+          
+            display: flex; 
+        }
+
+       .img__section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border-radius:80px 0px 0px 150px;
+        width: 400px;
+        background-color: rgba(198, 236, 235, 0.17);
+        font-weight: 600;
+       }
+
+       
+       .hello{
+        margin: 0px;
+        font-weight: 700;
+        font-size: 62px;
+       }
+       .welcome__tag{
+        font-size: 42px;
+        margin: -20px 0px 0px 130px;
+       }
+
+       form{
+        margin-top: 40px;
+       }
+
+        .login__section{
+            display: flex;
+            justify-content: center;
+            width: 320px;
+            height: 450px;
+            text-align: center;
+            border-radius:0px 150px 80px 00px;
+            background-color: rgba(198, 236, 235, 0.17);
+            backdrop-filter: 10px;
+            padding-top: 50px;
+            color: white;
+        }
+
+        .login__tag{
+            font-size: 42px;
+            font-weight: 600;
+        }
+
+        .input__area{
+            text-align: right;
+            font-size: 20px;
+            padding-top: 20px;
+         }
+         label{
+            display: block; 
+            text-align: left;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+         input{
+            display: block;
+            width: 75%;
+            height: 30px;
+            border-radius: 3px;
+            padding: 0px 10px;
+            border:none;
+            background-color: rgba(255,255,255,0.08);
+            margin-left: 30px;
+            margin-right: 50px;
+            margin-top:8px;
+        }
+        button{
+            width: 85%;
+            height: 30px;
+            margin:  30px 0px 0px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 3px;
+            border: none;
+            color: black;
+        }
+
+        .remember__btn{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+ 
+        .remember{
+            margin: 0px;
+        }
+        .check__btn{
+            width:15px;
+            height: auto;
+            display: inline;
+            margin: 0px;            
+        }
+
+        .forget{
+            font-size: 12;
+            margin-top: 5px;
+            margin-left:40px;
+        }
+
+        img{
+            width: 200px;
+            height: 300px;
+        }
+       
+    </style>
+</head>
+<body>
+     <div class="conatiner">
+
+        <div class="card__container">
+
+            <div class="img__section">
+               <img src="./assests/image-hero-desktop.png" alt="">
+                <p><span class="hello">Hello</span>,user</p>
+                <p class="welcome__tag">welcome back</p>
+            </div>
+
+            <div class="login__section">
+                <form action="">
+                    <p class="login__tag">Login Form</p>
+
+                    <div class="inputs">
+                        <label for="name">Username</label>
+                        <input type="text" placeholder="Enter the name">
+                     
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter the password">
+                     </div>
+                     <div class="remember__btn">
+                        <input class="check__btn" type="checkbox" name="remember">
+                        <label class="remember" for="remember">Remember me</label></div>
+                     
+
+                    <button>Login</button>
+                    <p class="forget"><a href="./ForgetPass.html">Forget password</a></p>
+                </form>
+          </div>
+        </div>
+         
+</body>
+</html>
